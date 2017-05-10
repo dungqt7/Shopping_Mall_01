@@ -1,20 +1,20 @@
- <link href="{!!url('public/frontend/css/font-awesome.css')!!}" rel="stylesheet">
+ <link href="{!!url('frontend/css/font-awesome.css')!!}" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="{!!url('public/frontend/css/bootstrap.css')!!}" rel="stylesheet">   
+    <link href="{!!url('frontend/css/bootstrap.css')!!}" rel="stylesheet">   
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
-    <link href="{!!url('public/frontend/css/jquery.smartmenus.bootstrap.css')!!}" rel="stylesheet">
+    <link href="{!!url('frontend/css/jquery.smartmenus.bootstrap.css')!!}" rel="stylesheet">
     <!-- Product view slider -->
-    <link rel="stylesheet" type="text/css" href="{!!url('public/frontend/css/jquery.simpleLens.css')!!}">    
+    <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/jquery.simpleLens.css')!!}">    
     <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="{!!url('public/frontend/css/slick.css')!!}">
+    <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/slick.css')!!}">
     <!-- price picker slider -->
-    <link rel="stylesheet" type="text/css" href="{!!url('public/frontend/css/nouislider.css')!!}">
+    <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/nouislider.css')!!}">
     <!-- Theme color -->
-    <link id="switcher" href="{!!url('public/frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
+    <link id="switcher" href="{!!url('frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
     <!-- <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet"> -->
 
     <!-- Main style sheet -->
-    <link href="{!!url('public/frontend/css/style.css')!!}" rel="stylesheet">    
+    <link href="{!!url('frontend/css/style.css')!!}" rel="stylesheet">    
 
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -22,7 +22,7 @@
  @include('frontend.blocks.header')
  @include('frontend.blocks.section-menu')
  <section id="aa-catg-head-banner">
-   <img src="{!!url('public/frontend/img/fashion/fashion-header-bg-8.jpg')!!}" alt="fashion img" style="height: 80%">
+   <img src="{!!url('frontend/img/fashion/fashion-header-bg-8.jpg')!!}" alt="fashion img" style="height: 80%">
    <div class="aa-catg-head-banner-area">
      <div class="container">
       <div class="aa-catg-head-banner-content">
@@ -128,17 +128,17 @@
 
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="{!!url('public/frontend/js/bootstrap.js')!!}"></script>  
+  <script src="{!!url('frontend/js/bootstrap.js')!!}"></script>  
   <!-- SmartMenus jQuery plugin -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.smartmenus.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.smartmenus.js')!!}"></script>
   <!-- SmartMenus jQuery Bootstrap Addon -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.smartmenus.bootstrap.js')!!}"></script>  
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.smartmenus.bootstrap.js')!!}"></script>  
   <!-- Product view slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.simpleGallery.js')!!}"></script>
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.simpleLens.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.simpleGallery.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.simpleLens.js')!!}"></script>
   <!-- slick slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/slick.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/slick.js')!!}"></script>
   <!-- Price picker slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/nouislider.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/nouislider.js')!!}"></script>
   <!-- Custom js -->
-  <script src="{!!url('public/frontend/js/custom.js')!!}"></script> 
+  <script src="{!!url('frontend/js/custom.js')!!}"></script> 

@@ -7,23 +7,23 @@
     <title>Daily Shop | Home</title>
     
     <!-- Font awesome -->
-    <link href="{!!url('public/frontend/css/font-awesome.css')!!}" rel="stylesheet">
+    <link href="{!!url('frontend/css/font-awesome.css')!!}" rel="stylesheet">
     <!-- Bootstrap -->
-    <link href="{!!url('public/frontend/css/bootstrap.css')!!}" rel="stylesheet">   
+    <link href="{!!url('frontend/css/bootstrap.css')!!}" rel="stylesheet">   
     <!-- SmartMenus jQuery Bootstrap Addon CSS -->
-    <link href="{!!url('public/frontend/css/jquery.smartmenus.bootstrap.css')!!}" rel="stylesheet">
+    <link href="{!!url('frontend/css/jquery.smartmenus.bootstrap.css')!!}" rel="stylesheet">
     <!-- Product view slider -->
     <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/jquery.simpleLens.css')!!}">    
     <!-- slick slider -->
-    <link rel="stylesheet" type="text/css" href="{!!url('public/frontend/css/slick.css')!!}">
+    <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/slick.css')!!}">
     <!-- price picker slider -->
-    <link rel="stylesheet" type="text/css" href="{!!url('public/frontend/css/nouislider.css')!!}">
+    <link rel="stylesheet" type="text/css" href="{!!url('frontend/css/nouislider.css')!!}">
     <!-- Theme color -->
-    <link id="switcher" href="{!!url('public/frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
+    <link id="switcher" href="{!!url('frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
     <!-- <link id="switcher" href="css/theme-color/bridge-theme.css" rel="stylesheet"> -->
 
     <!-- Main style sheet -->
-    <link href="{!!url('public/frontend/css/style.css')!!}" rel="stylesheet">    
+    <link href="{!!url('frontend/css/style.css')!!}" rel="stylesheet">    
 
     <!-- Google Font -->
     <link href='https://fonts.googleapis.com/css?family=Lato' rel='stylesheet' type='text/css'>
@@ -63,7 +63,7 @@
               <div class="col-md-5 no-padding">                
                 <div class="aa-promo-left">
                   <div class="aa-promo-banner">                    
-                    <img src="{!!url('public/frontend/img/promo-banner-1.jpg')!!}" alt="img">                    
+                    <img src="{!!url('frontend/img/promo-banner-1.jpg')!!}" alt="img">                    
                     <div class="aa-prom-content">
                       <span>75% Off</span>
                       <h4><a href="#">For Women</a></h4>                      
@@ -76,7 +76,7 @@
                 <div class="aa-promo-right">
                   <div class="aa-single-promo-right">
                     <div class="aa-promo-banner">                      
-                      <img src="{!!url('public/frontend/img/promo-banner-3.jpg')!!}" alt="img">                      
+                      <img src="{!!url('frontend/img/promo-banner-3.jpg')!!}" alt="img">                      
                       <div class="aa-prom-content">
                         <span>Exclusive Item</span>
                         <h4><a href="#">For Men</a></h4>                        
@@ -85,7 +85,7 @@
                   </div>
                   <div class="aa-single-promo-right">
                     <div class="aa-promo-banner">                      
-                      <img src="{!!url('public/frontend/img/promo-banner-2.jpg')!!}" alt="img">                      
+                      <img src="{!!url('frontend/img/promo-banner-2.jpg')!!}" alt="img">                      
                       <div class="aa-prom-content">
                         <span>Sale Off</span>
                         <h4><a href="#">On Shoes</a></h4>                        
@@ -94,7 +94,7 @@
                   </div>
                   <div class="aa-single-promo-right">
                     <div class="aa-promo-banner">                      
-                      <img src="{!!url('public/frontend/img/promo-banner-4.jpg')!!}" alt="img">                      
+                      <img src="{!!url('frontend/img/promo-banner-4.jpg')!!}" alt="img">                      
                       <div class="aa-prom-content">
                         <span>New Arrivals</span>
                         <h4><a href="#">For Kids</a></h4>                        
@@ -103,7 +103,7 @@
                   </div>
                   <div class="aa-single-promo-right">
                     <div class="aa-promo-banner">                      
-                      <img src="{!!url('public/frontend/img/promo-banner-5.jpg')!!}" alt="img">                      
+                      <img src="{!!url('frontend/img/promo-banner-5.jpg')!!}" alt="img">                      
                       <div class="aa-prom-content">
                         <span>25% Off</span>
                         <h4><a href="#">For Bags</a></h4>                        
@@ -156,21 +156,21 @@
   <!-- jQuery library -->
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
   <!-- Include all compiled plugins (below), or include individual files as needed -->
-  <script src="{!!url('public/frontend/js/bootstrap.js')!!}"></script>  
+  <script src="{!!url('frontend/js/bootstrap.js')!!}"></script>  
   <!-- SmartMenus jQuery plugin -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.smartmenus.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.smartmenus.js')!!}"></script>
   <!-- SmartMenus jQuery Bootstrap Addon -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.smartmenus.bootstrap.js')!!}"></script>  
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.smartmenus.bootstrap.js')!!}"></script>  
   <!-- Product view slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.simpleGallery.js')!!}"></script>
-  <script type="text/javascript" src="{!!url('public/frontend/js/jquery.simpleLens.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.simpleGallery.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/jquery.simpleLens.js')!!}"></script>
   <!-- slick slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/slick.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/slick.js')!!}"></script>
   <!-- Price picker slider -->
-  <script type="text/javascript" src="{!!url('public/frontend/js/nouislider.js')!!}"></script>
+  <script type="text/javascript" src="{!!url('frontend/js/nouislider.js')!!}"></script>
   <!-- Custom js -->
-  <script src="{!!url('public/frontend/js/custom.js')!!}"></script> 
-  <script src="{!!url('public/frontend/js/mai.js')!!}"></script> 
+  <script src="{!!url('frontend/js/custom.js')!!}"></script> 
+  <script src="{!!url('frontend/js/mai.js')!!}"></script> 
 
   </body>
 </html>
