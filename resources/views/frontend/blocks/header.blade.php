@@ -86,7 +86,7 @@
                 <div class="aa-cartbox-summary">
                   <ul>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="{!!url('frontend/img/woman-small-2.jpg')!!}" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="{!!url('public/frontend/img/woman-small-2.jpg')!!}" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
@@ -94,7 +94,7 @@
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
                     </li>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="{!!url('frontend/img/woman-small-1.jpg')!!}" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="{!!url('public/frontend/img/woman-small-1.jpg')!!}" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
