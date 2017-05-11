@@ -11,9 +11,7 @@
 |
 */
 
-Route::get('/', function () {
-    return view('frontend.master');
-});
+Route::get('/', 'HomeController@index');
 Route::get('contact', function () {
     return view('frontend.blocks.contact');
 });
@@ -30,11 +28,17 @@ Route::post('authentication/postLogin', ['as' => 'postLogin', 'uses' => 'Auth\Lo
 Route::get('authentication/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
 
 //Backend
-Route::get('backend/index', ['as' => 'backend', 'uses' => 'ThanhVienController@test']);
+Route::get('contact', ['as' => 'frontend', 'uses' => 'ThanhVienController@contact']);
+
+Route::get('blog', ['as' => 'frontend', 'uses' => 'ThanhVienController@blog']);
+Route::get('backend', ['as' => 'backend', 'uses' => 'ThanhVienController@backend']);
 //Categoty
 Route::resource('category-list', 'CategoryController');
 Route::get('sua', 'CategoryController@edit');
 Route::get('xem', 'CategoryController@xem');
+
+Route::get('frontend', 'CategoryController@frontend');
+
 //Color
 Route::resource('color-list', 'ColorController');
 Route::get('sua-color', 'ColorController@edit');

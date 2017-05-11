@@ -19,4 +19,12 @@ class Categories extends Model
     {
         return $this->hasMany(Banner::class);
     }
+    public function categories()
+    {
+        return $this->hasMany(Categories::class);
+    }
+    public function child()
+    {
+        return $this->hasMany(Categories::class,'parent_id', 'id');
+    }
 }

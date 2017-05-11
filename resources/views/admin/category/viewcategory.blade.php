@@ -8,17 +8,17 @@
                       <div>
                          <tr>
                            <th>Tên danh mục</th>
-                           <th>{!!$value->Cate_name!!}</th>
+                           <th>{!!$value->cate_name!!}</th>
                          </tr>
                          <tr>
                            <th>Tên danh mục cha</th>
                            <th>
                              @if($value->Parent_id==0)
-                              {!!$value->Cate_name!!}
+                              {!!$value->cate_name!!}
                              @else
                               <?php
-                               $parent= DB::table('categories')->where('id',$value['Parent_id'])->first();
-                               echo $parent->Cate_name;
+                               $parent= DB::table('categories')->where('id',$value['parent_id'])->first();
+                               echo $parent->cate_name;
                               ?>
                               @endif
                            </th>

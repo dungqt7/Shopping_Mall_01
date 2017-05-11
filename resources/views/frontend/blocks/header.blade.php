@@ -1,4 +1,4 @@
- <header id="aa-header">
+<header id="aa-header">
     <!-- start header top  -->
     <div class="aa-header-top">
       <div class="container">
@@ -11,21 +11,12 @@
                 <div class="aa-language">
                   <div class="dropdown">
                     <a class="btn dropdown-toggle" href="#" type="button" id="dropdownMenu1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="true">
-<<<<<<< HEAD
-                      <img src="{!!url('frontend/img/flag/english.jpg')!!}" alt="english flag">ENGLISH
-                      <span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
-                      <li><a href="#"><img src="{!!url('frontend/img/flag/french.jpg')!!}" alt="">FRENCH</a></li>
-                      <li><a href="#"><img src="{!!url('frontend/img/flag/english.jpg')!!}" alt="">ENGLISH</a></li>
-=======
                       <img src="{!!url('public/frontend/img/flag/english.jpg')!!}" alt="english flag">ENGLISH
                       <span class="caret"></span>
                     </a>
                     <ul class="dropdown-menu" aria-labelledby="dropdownMenu1">
                       <li><a href="#"><img src="{!!url('public/frontend/img/flag/french.jpg')!!}" alt="">FRENCH</a></li>
                       <li><a href="#"><img src="{!!url('public/frontend/img/flag/english.jpg')!!}" alt="">ENGLISH</a></li>
->>>>>>> e39618f... staticpage and backend
                     </ul>
                   </div>
                 </div>
@@ -95,7 +86,7 @@
                 <div class="aa-cartbox-summary">
                   <ul>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="{!!url('public/frontend/img/woman-small-2.jpg')!!}" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-2.jpg" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
@@ -103,7 +94,7 @@
                       <a class="aa-remove-product" href="#"><span class="fa fa-times"></span></a>
                     </li>
                     <li>
-                      <a class="aa-cartbox-img" href="#"><img src="{!!url('public/frontend/img/woman-small-1.jpg')!!}" alt="img"></a>
+                      <a class="aa-cartbox-img" href="#"><img src="img/woman-small-1.jpg" alt="img"></a>
                       <div class="aa-cartbox-info">
                         <h4><a href="#">Product Name</a></h4>
                         <p>1 x $250</p>
@@ -138,4 +129,3 @@
     </div>
     <!-- / header bottom  -->
   </header>
-  

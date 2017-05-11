@@ -4,7 +4,6 @@
 @if(count($errors)>0)
 <ul>
    @foreach($errors->all() as $error )
-  <li> {!!$error!!}</li>
   @endforeach
 </ul>
 @endif
@@ -53,7 +52,7 @@
                      </div>
                       
                     <div class="form-group">
-                      {!! Form::button('Add', array('class' => 'btn btn-primary add glyphicon glyphicon-plus', 'id' => 'add')) !!}   
+                      {!! Form::submit('Add', array('class' => 'btn btn-primary add glyphicon glyphicon-plus', 'id' => 'add')) !!}   
                       </div>
                     </form>
                   </div>

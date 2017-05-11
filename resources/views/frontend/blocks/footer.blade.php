@@ -1,8 +1,8 @@
- <footer id="aa-footer">
+<footer id="aa-footer">
     <!-- footer bottom -->
     <div class="aa-footer-top">
      <div class="container">
-        <div class="row">
+      <div class="row">
         <div class="col-md-12">
           <div class="aa-footer-top-area">
             <div class="row">
@@ -68,12 +68,12 @@
           </div>
         </div>
       </div>
-     </div>
     </div>
-    <!-- footer-bottom -->
-    <div class="aa-footer-bottom">
-      <div class="container">
-        <div class="row">
+  </div>
+  <!-- footer-bottom -->
+  <div class="aa-footer-bottom">
+    <div class="container">
+      <div class="row">
         <div class="col-md-12">
           <div class="aa-footer-bottom-area">
             <p>Designed by <a href="http://www.markups.io/">MarkUps.io</a></p>
@@ -86,7 +86,6 @@
           </div>
         </div>
       </div>
-      </div>
     </div>
-  </footer>
-  
+  </div>
+</footer>

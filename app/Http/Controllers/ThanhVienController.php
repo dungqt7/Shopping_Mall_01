@@ -14,9 +14,16 @@ class ThanhVienController extends Controller
 
     public function postLogin(ThanhVienRequest $request)
     {
-       
     }
-    public function test()
+    public function contact()
+    {
+        return view('frontend.blocks.contact');
+    }
+    public function blog()
+    {
+        return view('frontend.blocks.blog');
+    }
+    public function backend()
     {
         return view('admin.index');
     }

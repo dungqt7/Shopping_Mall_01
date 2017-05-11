@@ -1,4 +1,4 @@
-<section id="aa-testimonial">  
+ <section id="aa-testimonial">  
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -7,11 +7,7 @@
               <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-<<<<<<< HEAD
-                <img class="aa-testimonial-img" src="{!!url('public/frontend/img/testimonial-img-2.jpg')!!}" alt="testimonial img">
-=======
-                <img class="aa-testimonial-img" src="{!!url('frontend/img/testimonial-img-2.jpg')!!}" alt="testimonial img">
->>>>>>> e39618f... staticpage and backend
+                <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
                   <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
                   <div class="aa-testimonial-info">
@@ -53,4 +49,3 @@
       </div>
     </div>
   </section>
-  

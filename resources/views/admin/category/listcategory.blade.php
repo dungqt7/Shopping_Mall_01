@@ -33,7 +33,7 @@
                     </thead>
                       <tbody>
                       <?php $stt = 0 ?>
-                      @foreach($data as $value)
+                      @foreach($categories as $value)
                       <?php $stt = $stt+1 ?>
                        <tr>
                          <td>{!!$stt!!}</td>
@@ -45,10 +45,7 @@
                             @if($value->parent_id==0)
                              {!!"None"!!}
                             @else
-                            <?php
-                               $parent= DB::table('categories')->where('id',$value['parent_id'])->first();
-                               echo $parent->cate_name;
-                             ?>
+                              
                             @endif
                          </td>
                          <td>{!!date(' d-m-y h:i:s', strtotime($value->created_at))!!}</td>

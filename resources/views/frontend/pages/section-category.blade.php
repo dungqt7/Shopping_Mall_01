@@ -1,4 +1,4 @@
- <section id="aa-popular-category">
+<section id="aa-popular-category">
     <div class="container">
       <div class="row">
         <div class="col-md-12">
@@ -156,7 +156,7 @@
                       <span class="aa-badge aa-sale" href="#">SALE!</span>
                     </li>                                                                                   
                   </ul>
-                  <a class="aa-browse-btn" href="#">Xem thêm sản phẩm <span class="fa fa-long-arrow-right"></span></a>
+                  <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                 </div>
                 <!-- / popular product category -->
                 
@@ -452,6 +452,7 @@
                       <span class="aa-badge aa-sale" href="#">SALE!</span>
                     </li>                                                                                   
                   </ul>
+                   <a class="aa-browse-btn" href="#">Browse all Product <span class="fa fa-long-arrow-right"></span></a>
                 </div>
                 <!-- / latest product category -->              
               </div>
@@ -461,4 +462,3 @@
       </div>
     </div>
   </section>
-  

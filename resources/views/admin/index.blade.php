@@ -64,7 +64,7 @@
               <div class="menu_section">
                 <h3>General</h3>
                 <ul class="nav side-menu">
-                  <li><a href="{!! action('ThanhVienController@test')!!}"><i class="fa fa-home"></i> Home </a></li>
+                  <li><a href="{!! action('ThanhVienController@backend')!!}"><i class="fa fa-home"></i> Home </a></li>
                    <li><a><i class="fa fa-user" aria-hidden="true"></i> User <span class="fa fa-chevron-down"></span></a>
                     <ul class="nav child_menu">
                       <li><a href="#">List User</a></li>
