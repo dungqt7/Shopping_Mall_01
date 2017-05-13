@@ -12,25 +12,18 @@
 */
 Route::get('/home', 'HomeController@index');
 
-
 Route::get('/', function () {
     return view('frontend.master');
 });
-Route::get('contact', function () {
-    return view('frontend.blocks.contact');
-});
+Route::post('/language', 'LanguageController@changeLanguage');
+
+Route::get('backend', 'BlocksController@index');
+Route::get('contact', ['as' => 'frontend', 'uses' => 'BlocksController@contact']);
+Route::get('about', ['as' => 'frontend', 'uses' => 'BlocksController@about']);
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-// Route::get('authen/login', ['as' => 'getlogin', 'uses' => 'ThanhVienController@getLogin']);
-// Route::post('authen/login', ['as' => 'postlogin', 'uses' => 'ThanhVienController@postLogin']);
-
-Route::get('authentication/getLogin', ['as' => 'getLogin', 'uses' => 'Auth\LoginController@getLogin']);
-Route::post('authentication/postLogin', ['as' => 'postLogin', 'uses' => 'Auth\LoginController@postLogin']);
-Route::get('authentication/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-
 //Backend
 Route::get('backend/index', ['as' => 'backend', 'uses' => 'ThanhVienController@test']);
 //Categoty
