@@ -16,10 +16,7 @@
                              @if($value->Parent_id==0)
                               {!!$value->cate_name!!}
                              @else
-                              <?php
-                               $parent= DB::table('categories')->where('id',$value['parent_id'])->first();
-                               echo $parent->cate_name;
-                              ?>
+                             
                               @endif
                            </th>
                           
