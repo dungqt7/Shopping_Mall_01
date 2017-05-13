@@ -1,0 +1,15 @@
+{
+  "name": "validator",
+  "homepage": "https://github.com/yairEO/validator",
+  "version": "3.0.0",
+  "_release": "3.0.0",
+  "_resolution": {
+    "type": "version",
+    "tag": "3.0.0",
+    "commit": "f46f86e4484216d3b34b4014598219544a0a5add"
+  },
+  "_source": "https://github.com/yairEO/validator.git",
+  "_target": "^3.0.0",
+  "_originalSource": "https://github.com/yairEO/validator.git",
+  "_direct": true
+}

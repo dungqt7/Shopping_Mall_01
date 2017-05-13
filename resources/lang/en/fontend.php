@@ -77,4 +77,7 @@
         'daily' => 'daily',
         'shop' => 'Shop',
         'your shopping' => 'Your Shopping Partner',
+        'subscribe' => 'Subscribe our newsletter',
+        'dailyshop' => 'Daily Shop',
+        'home' => 'Home',
     ];

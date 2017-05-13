@@ -1,0 +1,11 @@
+{
+  "name": "smartmenus",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index",
+  "_source": "https://github.com/vadikom/smartmenus",
+  "_target": "*",
+  "_originalSource": "https://github.com/vadikom/smartmenus",
+  "_direct": true
+}

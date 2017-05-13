@@ -59,6 +59,9 @@ return [
     'update_category' => 'Update Cateory:',
     'hienthi' => 'Hiển thị',
     'ntd'=> 'Nguyễn Trung Dũng',
-    'thư viện ảnh' => 'Thư viện ảnh'
+    'thư viện ảnh' => 'Thư viện ảnh',
+    'add-factory' => 'Add Factories',
+    'logout' => 'Log Out',
+    'dailyshop-by' => 'DailyShop by',
 
 ];

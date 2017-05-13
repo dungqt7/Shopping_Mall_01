@@ -1,8 +1,8 @@
-<link href="{!!asset('public/bower_components/fontawesome/css/font-awesome.css')!!}" rel="stylesheet">
-<link href="{!!url('public/frontend/css/bootstrap.css')!!}" rel="stylesheet">
-<link href="{!!url('public/frontend/css/slick.css')!!}" rel="stylesheet">
-<link href="{!!url('public/frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
-<link href="{!!url('public/frontend/css/style.css')!!}" rel="stylesheet">
+<link href="{!!asset('bower_components/fontawesome/css/font-awesome.css')!!}" rel="stylesheet">
+<link href="{!!asset('frontend/css/bootstrap.css')!!}" rel="stylesheet">
+<link href="{!!asset('frontend/css/slick.css')!!}" rel="stylesheet">
+<link href="{!!asset('frontend/css/theme-color/default-theme.css')!!}" rel="stylesheet">
+<link href="{!!asset('frontend/css/style.css')!!}" rel="stylesheet">
  @include('frontend.blocks.header')
  @include('frontend.blocks.section-menu')
  
@@ -14,7 +14,6 @@
           <div class="aa-blog-archive-area">
             <div class="row">
               <div class="col-md-12">
-                <!-- Blog details -->
                 <div class="aa-blog-content aa-blog-details">
                   <article class="aa-blog-content-single">                        
                     <h2 class="text-center">{{trans('fontend.gioithieu')}}</h2>
@@ -39,8 +38,8 @@
 </div>
 @include('frontend.blocks.footer')
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script> 
-  <script src="{!!url('public/frontend/js/bootstrap.js')!!}"></script>
-  <script src="{!!url('public/frontend/js/jquery.simpleGallery.js')!!}"></script>
-  <script src="{!!url('public/frontend/js/jquery.simpleLens.js')!!}"></script>
-  <script src="{!!url('public/frontend/js/slick.js')!!}"></script>
-  <script src="{!!url('public/frontend/js/custom.js')!!}"></script>
+  <script src="{!!asset('frontend/js/bootstrap.js')!!}"></script>
+  <script src="{!!asset('frontend/js/jquery.simpleGallery.js')!!}"></script>
+  <script src="{!!asset('frontend/js/jquery.simpleLens.js')!!}"></script>
+  <script src="{!!asset('frontend/js/slick.js')!!}"></script>
+  <script src="{!!asset('frontend/js/custom.js')!!}"></script>
