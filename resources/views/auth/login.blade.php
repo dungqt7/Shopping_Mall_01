@@ -1,61 +1,68 @@
 @extends('layouts.app')
 
 @section('content')
-<!DOCTYPE html>
-<html lang="en">
+<div class="container">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Login</div>
+                <div class="panel-body">
+                    <form class="form-horizontal" role="form" method="POST" action="{{ route('login') }}">
+                        {{ csrf_field() }}
 
-<head>
-    <meta charset="utf-8">
-    <title></title>
+                        <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label for="email" class="col-md-4 control-label">E-Mail Address</label>
 
-    <!-- Google Fonts -->
-    <link rel="stylesheet" href="{!!url('login/css/animate.css')!!}">
-    <!-- Custom Stylesheet -->
-    <link rel="stylesheet" href="{!!url('login/css/style.css')!!}">
+                            <div class="col-md-6">
+                                <input id="email" type="email" class="form-control" name="email" value="{{ old('email') }}" required autofocus>
 
-</head>
+                                @if ($errors->has('email'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('email') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
 
-<body>
-@if(count($errors)>0)
-<ul>
-   @foreach($errors->all() as $error )
-    
-    <li> {!!$error!!}</li>
-    @endforeach
-</ul>
-@endif
- <form id="demo-form2" data-parsley-validate class="form-horizontal form-label-left" method="POST" action="{!!route('postlogin')!!}">
-  <input type="hidden" name="_token" value="{{ csrf_token() }}">
-    <div class="container">
-        <div class="top">
-            <h1 id="title" class="hidden"><span id="logo">Daily <span>UI</span></span></h1>
-        </div>
+                        <div class="form-group{{ $errors->has('password') ? ' has-error' : '' }}">
+                            <label for="password" class="col-md-4 control-label">Password</label>
 
-        <div class="login-box animated fadeInUp">
-            <div class="box-header">
-                <h2>Log In</h2>
+                            <div class="col-md-6">
+                                <input id="password" type="password" class="form-control" name="password" required>
+
+                                @if ($errors->has('password'))
+                                    <span class="help-block">
+                                        <strong>{{ $errors->first('password') }}</strong>
+                                    </span>
+                                @endif
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-6 col-md-offset-4">
+                                <div class="checkbox">
+                                    <label>
+                                        <input type="checkbox" name="remember" {{ old('remember') ? 'checked' : '' }}> Remember Me
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <div class="col-md-8 col-md-offset-4">
+                                <button type="submit" class="btn btn-primary">
+                                    Login
+                                </button>
+
+                                <a class="btn btn-link" href="{{ route('password.request') }}">
+                                    Forgot Your Password?
+                                </a>
+                            </div>
+                        </div>
+                    </form>
+                </div>
             </div>
-            <label for="email">Email</label>
-
-            <br/>
-            <input type="text" name="email" >
-            
-            <br/>
-            {!!$errors->first('email')!!}<br/>
-            <label for="password">Password</label>
-            <br/>
-            <input type="password"  name="password">
-              
-            <br/>
-            {!!$errors->first('password')!!}<br/>
-
-            <button type="submit">Sign In</button>
-            <br/>
-            <a href="#"><p class="small">Forgot your password?</p></a>
         </div>
     </div>
-    </form>
-</body>
-</html>
+</div>
 @endsection
-    

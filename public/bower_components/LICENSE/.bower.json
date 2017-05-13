@@ -1,0 +1,11 @@
+{
+  "name": "LICENSE",
+  "_cacheHeaders": {
+    "Content-Type": "text/html; charset=utf-8"
+  },
+  "main": "index",
+  "_source": "https://github.com/twbs/bootstrap/blob/master/LICENSE",
+  "_target": "*",
+  "_originalSource": "https://github.com/twbs/bootstrap/blob/master/LICENSE",
+  "_direct": true
+}

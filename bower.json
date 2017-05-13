@@ -12,7 +12,7 @@
     "bootstrap": "^3.3.7",
     "animate.css": "https://github.com/daneden/animate.css.git#^3.5.2",
     "autosize": "http://github.com/jackmoore/autosize.git#^3.0.20",
-    "bootstrap-daterangepicker": "https://github.com/christianesperar/bootstrap-daterangepicker",
+    "bootstrap-daterangepicker": "https://github.com/dangrossman/bootstrap-daterangepicker",
     "bootstrap-progressbar": "https://github.com/minddust/bootstrap-progressbar.git#^0.9.0",
     "bootstrap-wysiwyg": "https://github.com/steveathon/bootstrap-wysiwyg.git#^2.0.1",
     "chart.js": "https://github.com/nnnick/Chart.js.git#^2.5.0",
@@ -67,6 +67,12 @@
     "skycons": "https://github.com/darkskyapp/skycons.git",
     "starrr": "https://github.com/dobtco/starrr.git#^2.0.1",
     "transitionize": "https://github.com/abpetkov/transitionize.git#^0.0.3",
-    "validator": "https://github.com/yairEO/validator.git#^3.0.0"
+    "validator": "https://github.com/yairEO/validator.git#^3.0.0",
+    "jquery-simple-gallery": "https://github.com/akalicki/jquery-simple-gallery",
+    "jQuery-SimpleLens": "https://github.com/rajnesh0409/jQuery-SimpleLens",
+    "smartmenus": "https://github.com/vadikom/smartmenus",
+    "noUiSlider": "https://github.com/leongersen/noUiSlider",
+    "slick": "http://github.com/kenwheeler/slick",
+    "LICENSE": "https://github.com/twbs/bootstrap/blob/master/LICENSE"
   }
 }

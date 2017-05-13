@@ -1,51 +1,48 @@
- <section id="aa-testimonial">  
-    <div class="container">
-      <div class="row">
-        <div class="col-md-12">
-          <div class="aa-testimonial-area">
-            <ul class="aa-testimonial-slider">
-              <!-- single slide -->
-              <li>
-                <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img">
-                  <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
-                  <div class="aa-testimonial-info">
-                    <p>Allison</p>
-                    <span>Designer</span>
-                    <a href="#">Dribble.com</a>
-                  </div>
+<section id="aa-testimonial">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="aa-testimonial-area">
+          <ul class="aa-testimonial-slider">
+            <li>
+              <div class="aa-testimonial-single">
+                <img class="aa-testimonial-img" src="{!!asset('img/testimonial-img-2.jpg')!!}" alt="testimonial img">
+                <span class="fa fa-quote-left aa-testimonial-quote"></span>
+                <p>{{trans('fontend.loremispum')}}</p>
+                <div class="aa-testimonial-info">
+                  <p>{{trans('fontend.alison')}}</p>
+                  <span>{{trans('fontend.alison')}}</span>
+                  <a href="#">{{trans('fontend.dribble')}}</a>
                 </div>
-              </li>
-              <!-- single slide -->
-              <li>
-                <div class="aa-testimonial-single">
+              </div>
+            </li>
+            <li>
+              <div class="aa-testimonial-single">
                 <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img">
-                  <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
-                  <div class="aa-testimonial-info">
-                    <p>KEVIN MEYER</p>
-                    <span>CEO</span>
-                    <a href="#">Alphabet</a>
-                  </div>
+                <span class="fa fa-quote-left aa-testimonial-quote"></span>
+                <p>{{trans('fontend.loremispum')}}</p>
+                <div class="aa-testimonial-info">
+                  <p>{{trans('fontend.kevinmeyer')}}</p>
+                  <span>{{trans('fontend.ceo')}}</span>
+                  <a href="#">{{trans('fontend.alphabet')}}</a>
                 </div>
-              </li>
-               <!-- single slide -->
-              <li>
-                <div class="aa-testimonial-single">
+              </div>
+            </li>
+            <li>
+              <div class="aa-testimonial-single">
                 <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img">
-                  <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
-                  <div class="aa-testimonial-info">
-                    <p>Luner</p>
-                    <span>COO</span>
-                    <a href="#">Kinatic Solution</a>
-                  </div>
+                <span class="fa fa-quote-left aa-testimonial-quote"></span>
+                <p>{{trans('fontend.loremispum')}}</p>
+                <div class="aa-testimonial-info">
+                  <p>{{trans('fontend.luner')}}</p>
+                  <span>{{trans('fontend.coo')}}</span>
+                  <a href="#">{{trans('fontend.kinatic')}}</a>
                 </div>
-              </li>
-            </ul>
-          </div>
+              </div>
+            </li>
+          </ul>
         </div>
       </div>
     </div>
-  </section>
+  </div>
+</section>

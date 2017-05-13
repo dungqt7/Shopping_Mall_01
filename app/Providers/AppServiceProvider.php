@@ -17,8 +17,8 @@ class AppServiceProvider extends ServiceProvider
     public function boot(Request $request)
     {
         
-        $categories = Categories::all();
-        $cate_parent = Categories::where('parent_id', 1);
+        $categories = Categories::where('parent_id', 0)->get();
+        $cate_parent = Categories::where('parent_id', 1)->get();
         // Share this property with all the views in your application.
         view()->share([
          'categories' => $categories,
