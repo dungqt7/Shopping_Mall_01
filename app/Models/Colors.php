@@ -11,10 +11,9 @@ class Colors extends Model
         'color_name',
         'status',
     ];
+    public $timestamps = true;
 
-    public $timestamps=true;
-
-    public function product()
+    public function products()
     {
         return $this->hasMany(Product::class);
     }

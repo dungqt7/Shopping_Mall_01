@@ -25,6 +25,7 @@ class HomeController extends Controller
     {
         return view('home');
     }
+
     public function frontend()
     {
         return view('admin.index');
