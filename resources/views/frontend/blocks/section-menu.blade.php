@@ -5,35 +5,31 @@
         <div class="navbar navbar-default" role="navigation">
           <div class="navbar-header">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-              <span class="sr-only">Toggle navigation</span>
+              <span class="sr-only">{{trans('fontend.toggle')}}</span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
               <span class="icon-bar"></span>
             </button>          
           </div>
           <div class="navbar-collapse collapse">
-            <!-- Left nav -->
             <ul class="nav navbar-nav">
-              <li><a href="index.html">Home</a></li>
-               @foreach( $categories as $cat)
-              <li><a href="#">{{$cat->cate_name}} <span class="caret"></span></a>
-              
+              <li><a href="{!!url('/')!!}"  style="font-size:22px">{{ trans('backend.home')}}</a></li>
+              @foreach($categories as $value)
+              <li><a href="" >{!!$value->cate_name!!}<span class="caret"></span></a>
                 <ul class="dropdown-menu">
-                @foreach( $cat->child as $child)
-                  <li><a href="#">{{$child->cate_name}}</a></li>
-                 @endforeach
+                  @foreach($value->child as $child)
+                 <li><a href="{!!url('loai-san-pham', [$child->id,$child->cate_name])!!}">{!! $child->cate_name!!}</a>
+                  </li> 
+                  @endforeach
                 </ul>
-               
               </li>
               @endforeach
-             
-              <li><a href="blog-archive.html">Blog <span class="caret"></span></a>
-              </li>
-              <li><a href="contact.html">Contact</a></li>
-             
+              <li><a href="{{ action('BlocksController@contact') }}" >{{ trans('backend.contact')}}</a></li>
+              <li><a href="{{ action('BlocksController@about') }}" >{{trans('backend.about')}}</a></li>
             </ul>
-          </div><!--/.nav-collapse -->
+          </div>
         </div>
       </div>       
     </div>
   </section>
+  

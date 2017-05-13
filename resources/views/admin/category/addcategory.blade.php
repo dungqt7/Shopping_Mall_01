@@ -4,16 +4,16 @@
 @if(count($errors)>0)
 <ul>
    @foreach($errors->all() as $error )
+  <li> {!!$error!!}</li>
   @endforeach
 </ul>
 @endif
               <div class="title_left">
-                <h3>Add Cateory</h3>
+              <h3>{{ trans('backend.add_category')}}</h3>
               </div>
              </div>
       <div class="clearfix"></div>
-{{-- <button type="button" class="close" data-dismiss="alert"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button> --}}
-    <div class="row">
+          <div class="row">
               <div class="col-md-12 col-sm-12 col-xs-12">
                 <div class="x_panel">
                   <div class="x_title">
@@ -37,7 +37,7 @@
                        {!! Form::label('danhdanh', 'Danh mục cha', array('class' => 'control-label col-md-3 col-sm-3 col-xs-12' )) !!}
                       <center>
                         <select class="form-control col-md-6 col-sm-6 col-xs-12" id="locID" style="width:500px;margin-left: 10px;" name="catparent">
-                       <option value="0">Please Select</option>
+                       <option value="0">{{ trans('backend.please_select')}}</option>
                        @foreach($parent as $value)
                        <option value="{!!$value['id']!!}" name="catparent" >{!!$value['Cate_name']!!}</option>
                        @endforeach
@@ -45,14 +45,14 @@
                       </select>
                       </center>
                       </div>
-                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">Trạng thái <span class="required">*</span>
+                       <label class="control-label col-md-3 col-sm-3 col-xs-12" for="first-name">{{ trans('backend.tranthai')}}<span class="required">*</span>
                         </label>
                         <div class="col-md-6 col-sm-6 col-xs-12">
                      {!!Form::checkbox('status', '1', true);!!}
                      </div>
                       
                     <div class="form-group">
-                      {!! Form::submit('Add', array('class' => 'btn btn-primary add glyphicon glyphicon-plus', 'id' => 'add')) !!}   
+                      {!! Form::button('Add', array('class' => 'btn btn-primary add glyphicon glyphicon-plus', 'id' => 'add')) !!}   
                       </div>
                     </form>
                   </div>

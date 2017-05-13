@@ -22,18 +22,15 @@ class CategoryController extends Controller
     }
     public function edit(Request $request)
     {
-        $data = Categories::find($request->id);
-        $parent = Categories::select('cate_name', 'id', 'parent_id')->get()->toArray();
-        return view('admin.category.updatecategory', compact('data', 'parent'));
+        $category = Categories::find($request->id);
+        $categories = Categories::select('id', 'cate_name')->pluck('cate_name', 'id');
+        return view('admin.category.updatecategory', compact('category', 'categories'));
     }
     public function store(CategoryRequest $request)
     {
         $cate = new Categories;
-        $cate->cate_name = $request->name;
-        $cate->parent_id = $request->catparent;
-        $time = time();
-        $cate->created_at = $time;
-        $cate->updated_at = $time;
+        $cate->cate_name = $request->catename;
+        $cate->parent_id = $request->catename;
         $cate->status = $request->status;
         $cate->save();
         return redirect()->route('category-list.index')
@@ -60,15 +57,18 @@ class CategoryController extends Controller
     }
     public function update($id, Request $request)
     {
-          $cate = Categories::find($id);
-          $cate->update($request->id);
-          $cate->save();
+        $cate = new Categories;
+        $cate->cate_name = $request->name;
+        $cate->parent_id = $request->catparent;
+        $cate->status = $request->status;
+        $cate->save();
           return redirect()->route('category-list.index')
           ->with(['flash_level' => 'primary', 'flash_message' => 'Cập nhật danh mục thành công']) ;
     }
     public function xem(Request $request)
     {
-          $data = Categories::where('id', $request->id)->select('cate_name', 'id', 'parent_id', 'created_at', 'updated_at', 'status')->get();
+          $data = Categories::where('id', $request->id)
+          ->select('cate_name', 'id', 'parent_id', 'created_at', 'updated_at', 'status')->get();
           $parent = Categories::select('Cate_name', 'id', 'parent_id')->get()->toArray();
          return view('admin.category.viewcategory', compact('data', 'parent'));
     }

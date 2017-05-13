@@ -1,45 +1,42 @@
- <section id="aa-testimonial">  
+<section id="aa-testimonial">  
     <div class="container">
       <div class="row">
         <div class="col-md-12">
           <div class="aa-testimonial-area">
             <ul class="aa-testimonial-slider">
-              <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
-                <img class="aa-testimonial-img" src="img/testimonial-img-2.jpg" alt="testimonial img">
+                <img class="aa-testimonial-img" src="{!!url('frontend/img/testimonial-img-2.jpg')!!}" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>{{trans('fontend.loremispum')}}</p>
                   <div class="aa-testimonial-info">
-                    <p>Allison</p>
-                    <span>Designer</span>
-                    <a href="#">Dribble.com</a>
+                    <p>{{trans('fontend.alison')}}</p>
+                    <span>{{trans('fontend.alison')}}</span>
+                    <a href="#">{{trans('fontend.dribble')}}</a>
                   </div>
                 </div>
               </li>
-              <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
                 <img class="aa-testimonial-img" src="img/testimonial-img-1.jpg" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>{{trans('fontend.loremispum')}}</p>
                   <div class="aa-testimonial-info">
-                    <p>KEVIN MEYER</p>
-                    <span>CEO</span>
-                    <a href="#">Alphabet</a>
+                    <p>{{trans('fontend.kevinmeyer')}}</p>
+                    <span>{{trans('fontend.ceo')}}</span>
+                    <a href="#">{{trans('fontend.alphabet')}}</a>
                   </div>
                 </div>
               </li>
-               <!-- single slide -->
               <li>
                 <div class="aa-testimonial-single">
                 <img class="aa-testimonial-img" src="img/testimonial-img-3.jpg" alt="testimonial img">
                   <span class="fa fa-quote-left aa-testimonial-quote"></span>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui!consectetur adipisicing elit. Sunt distinctio omnis possimus, facere, quidem qui.</p>
+                  <p>{{trans('fontend.loremispum')}}</p>
                   <div class="aa-testimonial-info">
-                    <p>Luner</p>
-                    <span>COO</span>
-                    <a href="#">Kinatic Solution</a>
+                    <p>{{trans('fontend.luner')}}</p>
+                    <span>{{trans('fontend.coo')}}</span>
+                    <a href="#">{{trans('fontend.kinatic')}}</a>
                   </div>
                 </div>
               </li>
@@ -49,3 +46,4 @@
       </div>
     </div>
   </section>
+  
