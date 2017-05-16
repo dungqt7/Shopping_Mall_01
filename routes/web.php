@@ -10,27 +10,17 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-Route::get('/home', 'HomeController@index');
+Route::get('/', 'HomeController@index');
+Route::get('login', 'HomeController@login');
+Route::post('/language', 'LanguageController@changeLanguage');
 
-
-Route::get('/', function () {
-    return view('frontend.master');
-});
-Route::get('contact', function () {
-    return view('frontend.blocks.contact');
-});
+Route::get('backend', 'BlocksController@index');
+Route::get('contact', ['as' => 'frontend', 'uses' => 'BlocksController@contact']);
+Route::get('about', ['as' => 'frontend', 'uses' => 'BlocksController@about']);
 
 Auth::routes();
 
 Route::get('/home', 'HomeController@index')->name('home');
-
-// Route::get('authen/login', ['as' => 'getlogin', 'uses' => 'ThanhVienController@getLogin']);
-// Route::post('authen/login', ['as' => 'postlogin', 'uses' => 'ThanhVienController@postLogin']);
-
-Route::get('authentication/getLogin', ['as' => 'getLogin', 'uses' => 'Auth\LoginController@getLogin']);
-Route::post('authentication/postLogin', ['as' => 'postLogin', 'uses' => 'Auth\LoginController@postLogin']);
-Route::get('authentication/logout', ['as' => 'logout', 'uses' => 'Auth\LoginController@logout']);
-
 //Backend
 Route::get('backend/index', ['as' => 'backend', 'uses' => 'ThanhVienController@test']);
 //Categoty
@@ -45,6 +35,10 @@ Route::get('xem-color', 'ColorController@xem');
 Route::resource('size-list', 'SizeController');
 Route::get('sua-size', 'SizeController@edit');
 Route::get('xem-size', 'SizeController@xem');
+//factory
+Route::resource('factory-list', 'FactoryController');
+Route::get('xem-factory', 'FactoryController@xem');
+Route::get('editfactory', 'FactoryController@edit');
 //Payment
 Route::resource('Payment', 'PaymentController');
 //Login /Logout

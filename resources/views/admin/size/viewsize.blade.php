@@ -4,31 +4,30 @@
             </div>
              <table class="table table-striped table-bordered detail-view">
                   <tbody>
-                      @foreach($data as $value)
+                      @foreach($size as $value)
                       <div>
                          <tr>
-                           <th>Size</th>
-                           <td>{!!$value->Size_name!!}</td>
+                           <th>{{trans('backend.size')}}</th>
+                           <td>{!!$value->size_name!!}</td>
                          </tr>
                          <tr>
-                           <th>Ngày tạo</th>
+                           <th>{{ trans('backend.creat_at')}}</th>
                            <td>{!!date(' d-m-y h:i:s', strtotime($value->created_at))!!}</td>
                          </tr>
                          <tr>
-                           <th>Ngày cập nhật</th>
+                           <th>{{ trans('backend.update_at')}}</th>
                            <td>{!!date(' d-m-y h:i:s', strtotime($value->updated_at))!!}</td>
                          </tr>
                          <tr>
-                         <th>Trạng thái</th>
+                         <th>{{ trans('backend.status')}}</th>
                          <td>
                          @if($value->status==1)
-                          {!!"<button class='label label-success'> Display</button>"!!}
+                          {!!"<button class='label label-success'>Hiển thị</button>"!!}
                          @else
-                          {!!"<button class='btn btn-danger'> Obscure</button>"!!}
+                          {!!"<button class='btn btn-danger'>Ẩn</button>"!!}
                          @endif
                          </td>
-                      </tr>
-                           
+                      </tr>    
                        </div>
                       @endforeach
                     </tbody>

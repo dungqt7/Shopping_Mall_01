@@ -4,36 +4,34 @@ namespace App\Http\Controllers;
 
 use App\Http\Requests\CategoryRequest;
 use Illuminate\Http\Request;
-use App\Category;
+use App\Models\Categories;
 
 class CategoryController extends Controller
 {
     public function index()
     {
-        $parent= Category::select('Cate_name', 'id', 'parent_id')->get()->toArray();
-        $data=Category::all();
-        return view('admin.category.listcategory', compact('data', 'parent'));
+        $parent = Categories::select('cate_name', 'id', 'parent_id')->get()->toArray();
+        $cate = Categories::all();
+        $categories = Categories::where('parent_id', 0)->get();
+        return view('admin.category.listcategory', compact('cate', 'parent', 'categories'));
     }
     public function create()
     {
-        $data=Category::all();
-        $parent=Category::select('Cate_name', 'id', 'parent_id')->get()->toArray();
-        return view('admin.category.addcategory', compact('data', 'parent'));
+        $cate = Categories::all();
+        $categories = Categories::select('id', 'cate_name')->pluck('cate_name', 'id');
+        return view('admin.category.addcategory', compact('cate', 'categories'));
     }
     public function edit(Request $request)
     {
-        $data=Category::find($request->id);
-        $parent=Category::select('cate_name', 'id', 'parent_id')->get()->toArray();
-        return view('admin.category.updatecategory', compact('data', 'parent'));
+        $category = Categories::find($request->id);
+        $categories = Categories::select('id', 'cate_name')->pluck('cate_name', 'id');
+        return view('admin.category.updatecategory', compact('category', 'categories'));
     }
-    public function store(CategoryRequest $request)
+    public function store(Request $request)
     {
-        $cate=new Category;
+        $cate= new Categories;
         $cate->cate_name = $request->name;
         $cate->parent_id = $request->catparent;
-        $time = time();
-        $cate->created_at=$time;
-        $cate->updated_at=$time;
         $cate->status=$request->status;
         $cate->save();
         return redirect()->route('category-list.index')
@@ -41,40 +39,38 @@ class CategoryController extends Controller
     }
     public function destroy($id)
     {
-          $parent = Category::where('Parent_id', $id)->count();
+          $parent = Categories::where('parent_id', $id)->count();
         if ($parent == 0) {
-            $cate= Category::find($id);
+            $cate = Categories::find($id);
             $cate->delete();
             return redirect()->route('category-list.index')
             ->with(['flash_level' => 'primary', 'flash_message' => 'Xoá danh mục thành công']);
         } else {
-            // echo "<script type='text/javascript'>
-            //   alert('Sorry!You can't delte);
-            //   window.location='";
-            //         echo route('admin.category.listcategory');
-            // echo"'
-            // </script>";
             return redirect()->route('category-list.index')
             ->with(['flash_level' => 'danger', 'flash_message' => 'Không được xóa danh mục này']);
         }
     }
     public function update($id, Request $request)
     {
-          $cate=Category::find($id);
-          $cate->cate_name=$request->name;
-          $cate->parent_id=$request->catparent;
-          $time = time();
-          $cate->created_at=$time;
-          $cate->updated_at=$time;
-          $cate->save();
+        $cate = Categories::find($id);
+        $cate->cate_name = $request->cate_name;
+        $cate->parent_id = $request->catparent;
+        $cate->status = $request->status;
+        $cate->save();
           return redirect()->route('category-list.index')
           ->with(['flash_level' => 'primary', 'flash_message' => 'Cập nhật danh mục thành công']) ;
     }
     public function xem(Request $request)
     {
-          $data = Category::where('id', $request->id)
-          ->select('id', 'Cate_name', 'Parent_id', 'status', 'created_at', 'updated_at')->get();
-          $parent = Category::select('Cate_name', 'id', 'parent_id')->get()->toArray();
-         return view('admin.category.viewcategory', compact('data', 'parent'));
+          $category = Categories::where('id', $request->id)
+          ->select('cate_name', 'id', 'parent_id', 'created_at', 'updated_at', 'status')->get();
+          $parent = Categories::select('Cate_name', 'id', 'parent_id')->get()->toArray();
+         return view('admin.category.viewcategory', compact('category', 'parent'));
+    }
+    public function frontend(Request $request)
+    {
+        $category = Categories::where('parent_id', 0);
+        $cate_parent = Categories::where('parent_id', $request->id);
+        return view('frontend.blocks.section-menu', compact('category', 'cate_parent'));
     }
 }

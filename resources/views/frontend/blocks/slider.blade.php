@@ -1,76 +1,62 @@
- <section id="aa-slider">
-    <div class="aa-slider-area">
-      <div id="sequence" class="seq">
-         <ul class="seq-canvas">
-            <!-- single slide item -->
-            <li>
-              <div class="seq-model">
-                <img data-seq src="{!!url('public/frontend/img/slider/1.jpg')!!}" alt="Men slide img" />
-              </div>
-              <div class="seq-title">
-               <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Men Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>
-            <!-- single slide item -->
-            <li>
-              <div class="seq-model">
-                <img data-seq src="{!!url('public/frontend/img/slider/2.jpg')!!}" alt="Wristwatch slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 40% Off</span>                
-                <h2 data-seq>Wristwatch Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>
-            <!-- single slide item -->
-            <li>
-              <div class="seq-model">
-                <img data-seq src="{!!url('public/frontend/img/slider/3.jpg')!!}" alt="Women Jeans slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Jeans Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>
-            <!-- single slide item -->           
-            <li>
-              <div class="seq-model">
-                <img data-seq src="{!!url('public/frontend/img/slider/4.jpg')!!}" alt="Shoes slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 75% Off</span>                
-                <h2 data-seq>Exclusive Shoes</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>
-            <!-- single slide item -->  
-             <li>
-              <div class="seq-model">
-                <img data-seq src="{!!url('public/frontend/img/slider/5.jpg')!!}" alt="Male Female slide img" />
-              </div>
-              <div class="seq-title">
-                <span data-seq>Save Up to 50% Off</span>                
-                <h2 data-seq>Best Collection</h2>                
-                <p data-seq>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minus, illum.</p>
-                <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">SHOP NOW</a>
-              </div>
-            </li>                   
-          </ul>
-        <!-- slider navigation btn -->
-<!--
-        <fieldset class="seq-nav" aria-controls="sequence" aria-label="Slider buttons">
-          <a type="button" class="seq-prev" aria-label="Previous"><span class="fa fa-angle-left"></span></a>
-          <a type="button" class="seq-next" aria-label="Next"><span class="fa fa-angle-right"></span></a>
-        </fieldset>
--->
+<section id="aa-slider">
+  <div class="aa-slider-area">
+    <div id="sequence" class="seq">
+     <ul class="seq-canvas">
+      <li>
+        <div class="seq-model">
+          <img data-seq src="{!!asset('frontend/img/slider/1.jpg')!!}" alt="Men slide img" />
+        </div>
+        <div class="seq-title">
+         <span data-seq>{!!trans('fontend.saveup75')!!}</span>  <h2 data-seq>{!!trans('fontend.mencollection')!!}</h2>                
+         <p data-seq>{!!trans('fontend.loremispum')!!}</p>
+         <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">{!!trans('fontend.shopnow')!!}</a>
+       </div>
+     </li>
+     <li>
+      <div class="seq-model">
+        <img data-seq src="{!!asset('frontend/img/slider/2.jpg')!!}" alt="Wristwatch slide img" />
       </div>
-    </div>
-  </section>
-  
+      <div class="seq-title">
+        <span data-seq>{!!trans('fontend.saveup40')!!}</span>            
+        <h2 data-seq>{!!trans('fontend.wriswatch')!!}</h2>                
+        <p data-seq>{!!trans('fontend.loremispum')!!}</p>
+        <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">{!!trans('fontend.shopnow')!!}</a>
+      </div>
+    </li>
+    <li>
+      <div class="seq-model">
+        <img data-seq src="{!!asset('frontend/img/slider/3.jpg')!!}" alt="Women Jeans slide img" />
+      </div>
+      <div class="seq-title">
+        <span data-seq>{!!trans('fontend.saveup75')!!}</span>                
+        <h2 data-seq>{!!trans('fontend.jeans')!!}</h2>                
+        <p data-seq>{!!trans('fontend.loremispum')!!}</p>
+        <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">{!!trans('fontend.shopnow')!!}</a>
+      </div>
+    </li>          
+    <li>
+      <div class="seq-model">
+        <img data-seq src="{!!asset('frontend/img/slider/4.jpg')!!}" alt="Shoes slide img" />
+      </div>
+      <div class="seq-title">
+        <span data-seq>{!!trans('fontend.saveup75')!!}</span>             
+        <h2 data-seq>{!!trans('fontend.exclusive shoes')!!}</h2>         
+        <p data-seq>{!!trans('fontend.loremispum')!!}</p>
+        <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">{!!trans('fontend.shopnow')!!}</a>
+      </div>
+    </li>
+    <li>
+      <div class="seq-model">
+        <img data-seq src="{!!asset('frontend/img/slider/5.jpg')!!}" alt="Male Female slide img" />
+      </div>
+      <div class="seq-title">
+        <span data-seq>{!!trans('fontend.saveup50')!!}</span>  
+        <h2 data-seq>{!!trans('fontend.bestcollection')!!}</h2>           
+        <p data-seq>{!!trans('fontend.loremispum')!!}</p>
+        <a data-seq href="#" class="aa-shop-now-btn aa-secondary-btn">{!!trans('fontend.shopnow')!!}</a>
+      </div>
+    </li>                   
+  </ul>
+</div>
+</div>
+</section>
