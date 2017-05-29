@@ -80,3 +80,5 @@ Route::get('user-search', 'UserController@search')->name('search.user');
 Route::get('pro-search', 'HomeController@searchpro')->name('search.pro');
 //Option  Category
 Route::get('option-category/{id}/{cate_name}', ['as' => 'optioncate', 'uses' => 'CategoryController@optionCategory']);
+Route::get('listfactory/{id}', ['as' => 'factory', 'uses' => 'ProductController@listfactory']);
+Route::get('pro/{id}', ['as'=> 'pro', 'uses' => 'ProductController@productajax']);
