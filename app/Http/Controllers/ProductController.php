@@ -125,17 +125,33 @@ class ProductController extends Controller
         return view('frontend.blocks.section-menu', compact('category', 'cate_parent', 'factories'));
     }
 
+
+    public function factory($id)
+    {
+        $factory = Factory::find($id);
+        $factories = Factory::all();
+        $product = Product::where('factory_id', $id)->get();
+        $size = Size::all();
+
+        return view('frontend.blocks.listfactory', compact('factory', 'factories', 'product', ' size'));
+    }
     public function listfactory(Request $Request, $id)
     {
         $factory = Factory::find($id);
         $factories = Factory::all();
         $category = Categories::category();
-        $product = Product::where('factory_id', $id)->paginate(8);
+        $product = Product::where('factory_id', $id)->get();
         $size = Size::all();
 
         return view('frontend.blocks.listfactory', compact('factory', 'factories', 'product', 'size', 'category'));
     }
+    public function productajax($id)
+    {
 
+         $product =DB::table('products')->where('cate_id', $id)->get();
+
+        return view('frontend.blocks.viewproduct', ['product' => $product]);
+    }
     public function ajax($id)
     {
          $product = Product::where('id', $id)->first();
@@ -148,29 +164,5 @@ class ProductController extends Controller
          ];
 
          return response()->json($result);
-    }
-
-    public function detailProduct($id)
-    {
-            $category = Categories::category();
-            $product = Product::product();
-            $factories = Factory::all();
-            $sizes = Size::all();
-            $color = Colors::all();
-            $productDetail = Product::where('id', $id)->first();
-            $productCate = Product::where('cate_id', $productDetail->cate_id)
-                ->where('id', '<>', $id)
-                ->orderBy('id', 'DESC')
-                ->get();
-
-            return view('frontend.blocks.productdetail', compact(
-                'productDetail',
-                'category',
-                'product',
-                'factories',
-                'sizes',
-                'color',
-                'productCate'
-            ));
     }
 }
